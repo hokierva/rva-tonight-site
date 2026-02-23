@@ -50,7 +50,7 @@
     .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
     .accent { color: var(--accent); }
     .stone { color: var(--stone); }
-    .mono { font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; }
+    .mono { font-family: 'Space Mono', monospace; text-transform: uppercase; letter-spacing: 1.5px; font-size: 13px; }
 
     /* ── Animations ── */
     @keyframes fadeUp {
@@ -201,7 +201,7 @@
       margin-bottom: 20px;
     }
     .hero p {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--text-secondary);
       max-width: 440px;
       margin-bottom: 36px;
@@ -260,36 +260,36 @@
         0 25px 60px rgba(0,0,0,0.5),
         0 0 0 1px rgba(240,236,228,0.06),
         inset 0 0 0 1px rgba(240,236,228,0.03);
-      transition: transform 0.4s ease;
+      transition: transform 0.4s ease, opacity 0.4s ease;
     }
     .phone-frame img {
       width: 100%;
       display: block;
     }
     .phone-frame.phone-main {
-      width: 260px;
+      width: 230px;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
     }
     .phone-frame.phone-left {
-      left: 0;
+      left: -30px;
       top: 50%;
-      transform: translateY(-50%) rotate(-6deg);
+      transform: translateY(-45%) rotate(-8deg);
       z-index: 2;
-      opacity: 0.7;
+      opacity: 0.85;
     }
     .phone-frame.phone-right {
-      right: 0;
+      right: -30px;
       top: 50%;
-      transform: translateY(-50%) rotate(6deg);
+      transform: translateY(-45%) rotate(8deg);
       z-index: 2;
-      opacity: 0.7;
+      opacity: 0.85;
     }
     .phone-frame.phone-main:hover { transform: translate(-50%, -52%); }
-    .phone-frame.phone-left:hover { transform: translateY(-52%) rotate(-4deg); opacity: 0.9; }
-    .phone-frame.phone-right:hover { transform: translateY(-52%) rotate(4deg); opacity: 0.9; }
+    .phone-frame.phone-left:hover { transform: translateY(-47%) rotate(-6deg); opacity: 1; }
+    .phone-frame.phone-right:hover { transform: translateY(-47%) rotate(6deg); opacity: 1; }
 
     /* ── Stats Bar ── */
     .stats-bar {
@@ -312,7 +312,7 @@
       letter-spacing: -1px;
     }
     .stat-item p {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
       margin-top: 4px;
       font-weight: 500;
@@ -339,7 +339,7 @@
       margin-bottom: 16px;
     }
     .section-header p {
-      font-size: 16px;
+      font-size: 18px;
       color: var(--text-secondary);
       max-width: 520px;
       margin: 0 auto;
@@ -373,11 +373,11 @@
     .feature-card h3 {
       font-family: 'Unbounded', sans-serif;
       font-weight: 700;
-      font-size: 17px;
+      font-size: 19px;
       margin-bottom: 10px;
     }
     .feature-card p {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
       line-height: 1.65;
     }
@@ -425,7 +425,7 @@
       line-height: 1.25;
     }
     .showcase-text p {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
       line-height: 1.7;
       margin-bottom: 12px;
@@ -435,7 +435,7 @@
       margin-top: 20px;
     }
     .showcase-text li {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
       padding: 8px 0;
       display: flex;
@@ -511,7 +511,7 @@
       margin-bottom: 16px;
     }
     .cta-section > p {
-      font-size: 17px;
+      font-size: 18px;
       color: var(--text-secondary);
       margin-bottom: 56px;
       max-width: 480px;
@@ -549,7 +549,7 @@
       font-size: 18px;
     }
     .footer-tagline {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
     }
     .footer-links {
@@ -557,7 +557,7 @@
       gap: 28px;
     }
     .footer-links a {
-      font-size: 15px;
+      font-size: 16px;
       color: var(--text-secondary);
       transition: color 0.2s;
     }
@@ -585,9 +585,9 @@
       .hero-phones {
         height: 400px;
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 440px;
       }
-      .phone-frame.phone-main { width: 200px; }
+      .phone-frame.phone-main { width: 180px; }
       .phone-frame.phone-left, .phone-frame.phone-right { width: 160px; }
       .stats-bar .container {
         grid-template-columns: repeat(2, 1fr);
@@ -657,20 +657,22 @@
 
     /* ── Mobile (≤480px) ── */
     @media (max-width: 480px) {
-      .container { padding: 0 18px; }
+      body { font-size: 18px; }
+      .container { padding: 0 20px; }
       .hero { padding: 110px 0 48px; }
       .hero h1 {
-        font-size: 32px;
+        font-size: 36px;
         letter-spacing: -1px;
       }
-      .hero p { font-size: 15px; line-height: 1.65; margin-bottom: 28px; }
-      .hero-badge { font-size: 11px; padding: 5px 12px; margin-bottom: 20px; }
+      .hero p { font-size: 18px; line-height: 1.65; margin-bottom: 28px; }
+      .hero-badge { font-size: 13px; padding: 6px 14px; margin-bottom: 20px; }
       .hero-phones {
-        height: 320px;
-        max-width: 320px;
+        height: 340px;
+        max-width: 360px;
       }
-      .phone-frame.phone-main { width: 170px; }
-      .phone-frame.phone-left, .phone-frame.phone-right { width: 130px; }
+      .phone-frame.phone-main { width: 155px; }
+      .phone-frame.phone-left, .phone-frame.phone-right { width: 135px; left: -15px; right: auto; }
+      .phone-frame.phone-right { left: auto; right: -15px; }
       .phone-frame { border-radius: 20px; }
       .hero-actions {
         flex-direction: column;
@@ -680,30 +682,33 @@
         padding: 14px 20px;
         justify-content: center;
       }
+      .store-badge-name { font-size: 17px; }
+      .store-badge-label { font-size: 12px; }
       .stats-bar { padding: 36px 0; }
       .stats-bar .container { gap: 24px; }
-      .stat-item h3 { font-size: 28px; }
-      .stat-item p { font-size: 12px; }
+      .stat-item h3 { font-size: 30px; }
+      .stat-item p { font-size: 16px; font-weight: 500; }
       .features { padding: 56px 0; }
       .feature-card { padding: 28px 22px; }
-      .feature-card h3 { font-size: 16px; }
-      .feature-card p { font-size: 13px; }
-      .section-header h2 { font-size: 24px; }
-      .section-header p { font-size: 14px; }
+      .feature-card h3 { font-size: 20px; }
+      .feature-card p { font-size: 17px; line-height: 1.6; }
+      .section-header h2 { font-size: 28px; }
+      .section-header p { font-size: 18px; }
       .section-header { margin-bottom: 36px; }
+      .mono { font-size: 14px; }
       .showcase { padding: 56px 0; }
       .showcase-row { gap: 32px; margin-bottom: 56px; }
       .showcase-phone .phone-frame { width: 190px; }
       .showcase-text .mono { margin-bottom: 10px; }
-      .showcase-text h3 { font-size: 21px; }
-      .showcase-text p { font-size: 14px; }
-      .showcase-text li { font-size: 13px; padding: 6px 0; }
+      .showcase-text h3 { font-size: 25px; }
+      .showcase-text p { font-size: 17px; line-height: 1.6; }
+      .showcase-text li { font-size: 16px; padding: 7px 0; }
       .venue-strip { padding: 28px 0; }
       .venue-ticker span { font-size: 13px; }
       .venue-ticker { gap: 24px; }
       .cta-section { padding: 64px 0; }
-      .cta-section h2 { font-size: 26px; }
-      .cta-section > p { font-size: 15px; margin-bottom: 44px; }
+      .cta-section h2 { font-size: 30px; }
+      .cta-section > p { font-size: 18px; margin-bottom: 44px; }
       .cta-stores {
         flex-direction: column;
         align-items: stretch;
@@ -712,22 +717,28 @@
       }
       .cta-stores .store-badge { justify-content: center; }
       footer { padding: 36px 0; }
+      .footer-logo { font-size: 20px; }
+      .footer-tagline { font-size: 16px; }
+      .footer-links a { font-size: 16px; }
       .footer-links {
         flex-direction: column;
         gap: 12px;
         align-items: center;
       }
-      .footer-bottom { margin-top: 16px; padding-top: 16px; }
+      .footer-bottom { margin-top: 16px; padding-top: 16px; font-size: 14px; }
     }
 
     /* ── Small phones (≤360px) ── */
     @media (max-width: 360px) {
-      .hero h1 { font-size: 28px; }
-      .hero-phones { height: 280px; max-width: 280px; }
-      .phone-frame.phone-main { width: 150px; }
+      .hero h1 { font-size: 30px; }
+      .hero p { font-size: 17px; }
+      .hero-phones { height: 300px; max-width: 300px; }
+      .phone-frame.phone-main { width: 135px; }
       .phone-frame.phone-left, .phone-frame.phone-right { width: 115px; }
-      .stat-item h3 { font-size: 24px; }
+      .stat-item h3 { font-size: 26px; }
       .showcase-phone .phone-frame { width: 170px; }
+      .section-header h2 { font-size: 24px; }
+      .feature-card h3 { font-size: 18px; }
     }
   </style>
 </head>

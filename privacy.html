@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — RVA Tonight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0E0C12;
+      --surface: #1E1C22;
+      --border: #2A2630;
+      --text: #F0ECE4;
+      --text-secondary: #6B6574;
+      --accent: #EA883A;
+    }
+    html { -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    nav {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 60px;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .accent { color: var(--accent); }
+    .back-link { font-size: 14px; color: var(--text-secondary); }
+    .back-link:hover { color: var(--text); text-decoration: none; }
+    .legal-header { margin-bottom: 48px; }
+    .legal-header h1 {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+    .legal-header p { font-size: 14px; color: var(--text-secondary); }
+    .legal-body h2 {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 40px 0 12px;
+    }
+    .legal-body p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .legal-body ul {
+      margin: 0 0 16px 24px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+    .legal-body li { margin-bottom: 8px; }
+    .legal-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .legal-body th, .legal-body td {
+      text-align: left;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .legal-body th {
+      background: var(--surface);
+      color: var(--text);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 80px;
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+    @media (max-width: 600px) {
+      .legal-header h1 { font-size: 28px; }
+      .legal-body table { font-size: 12px; }
+      .legal-body th, .legal-body td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo"><span>RVA </span><span class="accent">Tonight</span></a>
+      <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="legal-header">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: February 23, 2026</p>
+    </div>
+
+    <div class="legal-body">
+      <h2>The short version</h2>
+      <p>RVA Tonight does not collect, store, or transmit your personal data. The app runs entirely on your device. We don't have user accounts, analytics trackers, or advertising SDKs. We don't know who you are, and that's by design.</p>
+
+      <h2>1. Information We Collect</h2>
+      <p>RVA Tonight does not collect personal information. Here's what the app stores and where:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Stored Where</th>
+            <th>Sent to Us?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Saved events</td>
+            <td>Your device (localStorage)</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Theme preference (dark/light)</td>
+            <td>Your device (localStorage)</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Profile name &amp; location</td>
+            <td>Your device (localStorage)</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Splash screen shown flag</td>
+            <td>Your device (sessionStorage)</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>All of this data stays on your device. Clearing your browser data or uninstalling the app removes it permanently.</p>
+
+      <h2>2. Event Data</h2>
+      <p>The app fetches event information from our server, which aggregates publicly available data from venue websites, public APIs (MLB, ESPN), and public calendar feeds. This is one-directional: the server sends event data to your device. Your device does not send personal data back.</p>
+
+      <h2>3. Third-Party Services</h2>
+      <p>The app contains links to external websites including venue pages, ticket sellers (Google Search results), Google Calendar, and social media sharing endpoints. When you tap these links, you leave RVA Tonight and are subject to those services' privacy policies. We do not control what those services collect.</p>
+      <p>The app uses Google Fonts to load typefaces. Google may collect anonymized usage data through this service. See <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener">Google Fonts Privacy FAQ</a>.</p>
+
+      <h2>4. Analytics & Tracking</h2>
+      <p>RVA Tonight does not use analytics services, tracking pixels, advertising identifiers, or fingerprinting of any kind. We do not use cookies.</p>
+
+      <h2>5. Children's Privacy</h2>
+      <p>RVA Tonight does not knowingly collect information from children under 13. The app does not collect information from anyone — it has no mechanism to do so.</p>
+
+      <h2>6. Sponsored Events</h2>
+      <p>The app may display events marked as "Sponsored." These are paid placements by local venues and event organizers. Sponsored events are selected manually based on business agreements, not based on user data or behavioral targeting.</p>
+
+      <h2>7. Data Security</h2>
+      <p>Since we don't collect or store your data, there is no user data to secure on our end. Data stored locally on your device is protected by your device's security measures.</p>
+
+      <h2>8. Your Rights</h2>
+      <p>Since RVA Tonight does not collect personal data, there is no personal data to access, correct, or delete on our servers. You can clear locally stored data at any time through your device or browser settings.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>If we ever change our data practices, we will update this policy and the "Last updated" date above. If we ever begin collecting personal data, we will notify users and obtain consent as required by applicable law.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions about this policy? Contact us at <a href="mailto:hello@rvatonight.com">hello@rvatonight.com</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 RVA Tonight. Made in Richmond, VA.
+    </div>
+  </footer>
+</body>
+</html>

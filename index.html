@@ -317,7 +317,36 @@
       margin-top: 4px;
       font-weight: 500;
     }
-
+    .category-showcase {
+  padding: 48px 0;
+  text-align: center;
+}
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.category-pill .pill-emoji {
+  font-size: 18px;
+}
+    
     /* ── Features ── */
     .features {
       padding: 100px 0;
@@ -821,7 +850,25 @@
         <p>Categories</p>
     </div>
   </section>
-
+<section class="category-showcase">
+  <div class="container">
+    <div class="category-pills">
+      <span class="category-pill"><span class="pill-emoji">🎵</span> Live Music</span>
+      <span class="category-pill"><span class="pill-emoji">🍺</span> Food & Drink</span>
+      <span class="category-pill"><span class="pill-emoji">👶</span> Family</span>
+      <span class="category-pill"><span class="pill-emoji">😂</span> Comedy</span>
+      <span class="category-pill"><span class="pill-emoji">⚾</span> Sports</span>
+      <span class="category-pill"><span class="pill-emoji">🌿</span> Outdoors</span>
+      <span class="category-pill"><span class="pill-emoji">🧘</span> Wellness</span>
+      <span class="category-pill"><span class="pill-emoji">🌙</span> Nightlife</span>
+      <span class="category-pill"><span class="pill-emoji">🎭</span> Theater & Film</span>
+      <span class="category-pill"><span class="pill-emoji">🤝</span> Community</span>
+      <span class="category-pill"><span class="pill-emoji">📚</span> Education</span>
+      <span class="category-pill"><span class="pill-emoji">🎨</span> Arts & Culture</span>
+    </div>
+  </div>
+</section>
+  
   <!-- ── Features ── -->
   <section class="features" id="features">
     <div class="container">

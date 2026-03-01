@@ -3,12 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RVA Tonight — Your city. Right now.</title>
-  <meta name="description" content="Discover events happening in Richmond, VA. Live music, food, arts, sports, nightlife — sourced directly from local venues. Coming soon to iOS and Android.">
-  <meta property="og:title" content="RVA Tonight — Your city. Right now.">
-  <meta property="og:description" content="Discover events happening in Richmond, VA. Sourced directly from local venues.">
+
+  <!-- Primary SEO -->
+  <title>RVA Tonight — Discover Events in Richmond, VA</title>
+  <meta name="description" content="Discover live music, food events, comedy, sports, arts, and more happening in Richmond, Virginia. Sourced directly from 70+ local venues. Coming soon to iOS and Android.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rvatonightapp.com/">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/screen-home.png">
+  <meta property="og:url" content="https://rvatonightapp.com/">
+  <meta property="og:title" content="RVA Tonight — Discover Events in Richmond, VA">
+  <meta property="og:description" content="Live music, food, comedy, sports, arts, and more — sourced directly from 70+ Richmond venues. Coming soon to iOS and Android.">
+  <meta property="og:image" content="https://rvatonightapp.com/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="RVA Tonight">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RVA Tonight — Discover Events in Richmond, VA">
+  <meta name="twitter:description" content="Live music, food, comedy, sports, arts, and more — sourced directly from 70+ Richmond venues.">
+  <meta name="twitter:image" content="https://rvatonightapp.com/images/og-image.png">
+
+  <!-- Favicon & App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0E0C12">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Geo / Local SEO -->
+  <meta name="geo.region" content="US-VA">
+  <meta name="geo.placename" content="Richmond">
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RVA Tonight",
+    "url": "https://rvatonightapp.com",
+    "logo": "https://rvatonightapp.com/images/logo.png",
+    "description": "Local event discovery app for Richmond, Virginia. Discover live music, food events, comedy, sports, arts, and more from 70+ venues.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Richmond",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RVA Tonight",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EntertainmentApplication",
+    "description": "Discover events happening in Richmond, VA. Live music, food, arts, sports, nightlife — sourced directly from 70+ local venues.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "RVA Tonight"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Richmond",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite (enables sitelinks search box potential) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RVA Tonight",
+    "url": "https://rvatonightapp.com"
+  }
+  </script>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&family=Unbounded:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -963,7 +1049,7 @@
       <div class="showcase-row">
         <div class="showcase-phone reveal">
           <div class="phone-frame">
-            <img src="images/screen-home.png" alt="Home screen with today's events and coming up section">
+            <img src="images/screen-home.png" alt="RVA Tonight home screen showing today's events, categories, and calendar for Richmond VA" loading="lazy" width="240" height="520">
           </div>
         </div>
         <div class="showcase-text reveal reveal-delay-2">
@@ -981,7 +1067,7 @@
       <div class="showcase-row reverse">
         <div class="showcase-phone reveal">
           <div class="phone-frame">
-            <img src="images/screen-detail.png" alt="Event detail page with venue, time, price, and action buttons">
+            <img src="images/screen-detail.png" alt="RVA Tonight event detail page showing venue, time, price, and ticket link for a Richmond event" loading="lazy" width="240" height="520">
           </div>
         </div>
         <div class="showcase-text reveal reveal-delay-2">
@@ -1037,7 +1123,7 @@
       <div class="footer-links">
         <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:hello@rvatonight.com">Contact</a>
+        <a href="/cdn-cgi/l/email-protection#bcd4d9d0d0d3fccecaddc8d3d2d5dbd4c892dfd3d1">Contact</a>
       </div>
       <div class="footer-bottom">
         &copy; 2026 RVA Tonight. Made in Richmond, VA.
@@ -1046,7 +1132,7 @@
   </footer>
 
   <!-- ── Scripts ── -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Force scroll to top on refresh
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
